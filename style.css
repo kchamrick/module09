@@ -1,0 +1,29 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+.persistent-header{
+    background-color:darkcyan;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 3%;
+}
+.main-nav li{
+    display:inline-block
+}
+a,h1,h2,h3,p{
+    text-decoration:none;
+    font-family:sans-serif;
+}
+.main-nav li{
+    color:white
+}
+.link-list a{
+    color:white
+}
+.main-nav li a{
+    color:white
+}
