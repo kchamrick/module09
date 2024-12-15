@@ -1,75 +1,195 @@
-*{
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
-}
-body{
-    background-color: lightgreen;
-}
-
-.persistent-header{
-    background-color:darkcyan;
-    color:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 3%;
-}
-.main-nav li{
-    display:inline-block
-}
-a,h1,h2,h3,p{
-    text-decoration:none;
-    font-family:sans-serif;
-}
-hr{
-    width:90%;
-    margin:0 auto;
-}
-.main-nav li{
-    color:white
-}
-.link-list a{
-    color:white
-}
-.main-nav li a{
-    color:white
-}
-
-.main-content{
-    border:1px solid green;
-    width:75%;
-    margin:0 auto;
-    background-color:white;
-    padding:0 40px 30px 40px;
-}
-
-.main-content section{
-    border:13px solid green;
-    min-height: 250;
+/* projects page css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: white;
+  }
+  
+  a,
+  h1,
+  h2,
+  h3 {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .persistent-header {
+    background-color: olive;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 3%;
+  }
+  
+  .links-list li {
+    display: inline-block;
+  }
+  
+  .links-list a {
+    color: white;
+  }
+  
+  .main-content {
+    width: 75%;
+    margin: 0 auto;
+    background-color: black;
+    padding: 75px 30px 20px;
+  }
+  
+  .main-content > h2 {
+    color: white;
+    font-weight: 300;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .main-content > hr {
+    margin-bottom: 25px;
+  }
+  
+  .main-content section {
+    background-color: white;
     margin-bottom: 30px;
-}
-
-.section-content {
-padding:3px;
-min-height: 210px;
-}
-.section-content p{
-    margin:10px;
-    line-height:1.4;
-    font-size:18px;
+    padding-top: 20px;
+  }
+  
+  .main-content section hr {
+    width: 90%;
+    margin: 0 auto;
+    border-color: black;
+  }
+  
+  .main-content section h3 {
+    margin-left: 5%;
+    font-size: 28px;
+    font-weight: 400;
+    font-weight:bolder;
+  }
+  
+  .section-content {
+    padding: 13px;
+    padding-left: 5%;
+  }
+  
+  .section-content p {
+    margin: 10px;
+    margin-left: 0;
+    line-height: 1;
+    font-size: 18px;
     font-family: sans-serif;
-}
-.section-content img{
-    float:right;
-    margin-left:10px;
-    margin-top:10px;
-}
-.portraiat-right{
+  }
+  
+  .section-content img {
     float: right;
-}
-.section-content:nth-of-type(2) img{
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  section:nth-of-type(2) .section-content img {
     float: left;
-    margin-left:0;
-    margin-right:10px;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+.work{
+    font-size: 100px;
+    line-height: .9;
+    letter-spacing: -10px;
 }
+/* about page css */
+h1{
+    font-size: 100px;
+    color:olive;
+    margin-left: 20px;
+    line-height: .9;
+    letter-spacing: -10px;
+}
+h3{
+    font-size: 45px;
+    margin-top: 20px;
+    letter-spacing: -1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.descriptor{
+    font-size: 20px;
+    margin-bottom:20px;
+    margin-left: 40px;
+    margin-right:40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+/* Home page css */
+.quote{
+    font-size:75px;
+    color:olive;
+    margin-left:20px;
+    line-height:.9;
+    letter-spacing: -8px;
+    margin-bottom: 20px;
+}
+.passion{
+    font-size: 70px;
+    margin-top: 20px;
+    margin-left: 20px;
+    letter-spacing: -1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    line-height: .9;
+    letter-spacing: -6px;
+    margin-bottom:20px;
+}
+.persistent-header{
+    background-color: olive;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 3%;
+}
+/* Footer css */
+.persistent-footer {
+    display: flex; 
+    justify-content: space-between; /* Space between left and right items */
+    align-items: center; /* Align items vertically */
+    position: fixed; /* Fixes footer to the bottom */
+    bottom: 0; /* Aligns footer at the bottom */
+    width: 100%; /* Full width */
+    background-color: olive; /* Dark background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around content */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for style */
+  }
+  
+  /* Social Media Links Styling */
+  .footer-nav .social-links {
+    list-style-type: none; /* Remove bullets */
+    display: flex; /* Inline layout for links */
+    gap: 15px; /* Spacing between links */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove padding */
+  }
+  
+  .footer-nav .social-links li {
+    display: inline;
+  }
+  
+  .footer-nav .social-links a {
+    color: white; /* White link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Adjust font size */
+    transition: color 0.3s; /* Smooth color transition */
+  }
+  
+  .footer-nav .social-links a:hover {
+    color: #ff9800; /* Hover color */
+  }
+  
+  /* Footer Title Styling */
+  .footer {
+    font-size: 18px; /* Adjust font size */
+    margin: 0; /* Remove margin */
+  }
