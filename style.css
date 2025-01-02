@@ -149,16 +149,14 @@ h3{
     margin-top: 40px;
 }
 .passion{
-    font-size: 70px;
+    font-size: 30px;
     margin-top: 40px;
     margin-left: 40px;
-    letter-spacing: -1px;
     font-family: Arial, Helvetica, sans-serif;
+    color:olive;
     font-weight: 10;
-    line-height: .9;
-    letter-spacing: -6px;
     margin-bottom:40px;
-    text-align: right;
+    text-align: left;
     margin-right: 40px;
 }
 img{
@@ -220,3 +218,50 @@ img{
     font-size: 18px; /* Adjust font size */
     margin: 0; /* Remove margin */
   }
+  /* CSS Additions 1.2.25 */
+  .page-container > * {
+    background-color: white;
+    color: olive;
+    font-size: 30px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .page-container {
+    margin: 0 auto;
+    width: 1000px;
+    display: grid;
+    justify-content: center;
+    /*grid-template-rows: 100px 100px 100px 100px; */
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-gap: 10px;
+  }
+  .row-two {
+    background-color:white;
+    color:olive;
+    padding: 20px;
+    font-size: 18px;
+    width:1000px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-gap:30px;
+  }
+  .images {
+    padding:20px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:30px;
+  }
+/* Contact Page styling */
+.form {
+  font-size:25px;
+  max-width:660px;
+  margin:auto;
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
